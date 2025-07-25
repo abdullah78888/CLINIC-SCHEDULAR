@@ -26,6 +26,6 @@ if st.button("Login"):
     user = authenticate(username, password)
     if user:
         st.success(f"Welcome {user['username']}! Redirecting...")
-        st.switch_page("pages/scheduler_app.py")
+        st.switch_page("scheduler_app")  # التعديل هنا
     else:
         st.error("Invalid username or password.")
