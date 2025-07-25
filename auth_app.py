@@ -1,3 +1,4 @@
+
 import streamlit as st
 import json
 import os
@@ -19,6 +20,7 @@ def authenticate(username, password):
     return None
 
 # Login UI
+st.set_page_config(page_title="Login", page_icon="🔐")
 st.title("🔐 Clinic Scheduler Login")
 
 username = st.text_input("Username")
@@ -31,6 +33,6 @@ if st.button("Login"):
         st.session_state.authenticated = True
         st.session_state.role = user["role"]
         st.session_state.username = user["username"]
-        st.switch_page("pages/scheduler_app")  # ✅ التعديل هنا
+        st.switch_page("Scheduler App")  # ✅ تم التعديل هنا
     else:
         st.error("Invalid username or password")
