@@ -1,0 +1,148 @@
+{
+  "schedule": {
+    "Sunday": {
+      "AM": [
+        "OBGYN",
+        "PLASTIC SURGERY",
+        "PEDS CARDIO",
+        "PEDS OPTIMETRY",
+        "ENT",
+        "GENERAL PEDS",
+        "ORTHO",
+        "VASCULAR",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2",
+        "SCREENING ROOM 3"
+      ],
+      "PM": [
+        "ORTHO",
+        "PEDS GAS",
+        "GENERAL SURGERY",
+        "OPTHALMOLOGY",
+        "OPTEMETRY",
+        "ENT",
+        "PEDS CARDIO",
+        "ANESTHESIA",
+        "INTERNAL MEDICINE",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2",
+        "SCREENING ROOM 3"
+      ]
+    },
+    "Monday": {
+      "AM": [
+        "OBGYN",
+        "PEDS CARDIO",
+        "GENERAL PEDS",
+        "ENT",
+        "PLASTIC SURGERY",
+        "ORTHO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ],
+      "PM": [
+        "ORTHO",
+        "GENERAL SURGERY",
+        "INTERNAL MEDICINE",
+        "ENT",
+        "ANESTHESIA",
+        "OPTEMETRY",
+        "PEDS CARDIO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ]
+    },
+    "Tuesday": {
+      "AM": [
+        "OBGYN",
+        "GENERAL PEDS",
+        "ENT",
+        "ORTHO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2",
+        "SCREENING ROOM 3"
+      ],
+      "PM": [
+        "ORTHO",
+        "GENERAL SURGERY",
+        "ENT",
+        "INTERNAL MEDICINE",
+        "OPTEMETRY",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ]
+    },
+    "Wednesday": {
+      "AM": [
+        "OBGYN",
+        "PEDS CARDIO",
+        "ENT",
+        "GENERAL PEDS",
+        "ORTHO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ],
+      "PM": [
+        "ORTHO",
+        "ENT",
+        "INTERNAL MEDICINE",
+        "ANESTHESIA",
+        "GENERAL SURGERY",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2",
+        "SCREENING ROOM 3"
+      ]
+    },
+    "Thursday": {
+      "AM": [
+        "OBGYN",
+        "ENT",
+        "ORTHO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ],
+      "PM": [
+        "ENT",
+        "ORTHO",
+        "NURSE CLINIC",
+        "SCREENING ROOM 1",
+        "SCREENING ROOM 2"
+      ]
+    }
+  },
+  "staffing_rules": {
+    "DEFAULT": {
+      "nurses": 1,
+      "technicians": 1
+    },
+    "ORTHO": {
+      "nurses": 2,
+      "technicians": 1
+    },
+    "SCREENING ROOM 1": {
+      "nurses": 1,
+      "technicians": 1
+    },
+    "SCREENING ROOM 2": {
+      "nurses": 1,
+      "technicians": 1
+    },
+    "SCREENING ROOM 3": {
+      "nurses": 1,
+      "technicians": 1
+    },
+    "OBGYN": {
+      "nurses": 2,
+      "technicians": 1
+    }
+  }
+}
