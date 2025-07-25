@@ -1,12 +1,9 @@
-
 import streamlit as st
 import json
 import os
 
-# Path to user data
-users_file = os.path.join(os.path.dirname(__file__), "users.json")
+users_file = os.path.join("data", "users.json")
 
-# Load user data
 def load_users():
     with open(users_file, "r") as f:
         return json.load(f)
@@ -18,7 +15,8 @@ def authenticate(username, password):
             return user
     return None
 
-# Login UI
+st.set_page_config(page_title="Login", page_icon="🔐", layout="centered")
+
 st.title("🔐 Clinic Scheduler Login")
 
 username = st.text_input("Username")
@@ -27,10 +25,7 @@ password = st.text_input("Password", type="password")
 if st.button("Login"):
     user = authenticate(username, password)
     if user:
-        st.success("Login successful! Redirecting to schedule...")
-        st.session_state.authenticated = True
-        st.session_state.role = user["role"]
-        st.session_state.username = user["username"]
-        st.switch_page("scheduler_app.py")
+        st.success(f"Welcome {user['username']}! Redirecting...")
+        st.switch_page("pages/scheduler_app.py")
     else:
-        st.error("Invalid username or password")
+        st.error("Invalid username or password.")
